@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.notes {
+    width: 400px;
+    height: 90vh;
+    background-color: rgb(71, 23, 23);
+    margin: 20px auto;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.notes .header a >h1 {
+    font-size: 30px;
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 13px 5px;
+
+}
+
+.notes .header>img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#addNotes h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#addNotes input {
+    width: 95%;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+#addNotes button {
+    right: 488px;
+    top: 107px;
+    background-color: rgb(36, 36, 219);
+    height: 25px;
+    width: 70px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+#showNotes {
+    position: relative;
+}
+
+.note-item {
+    background-color: rgb(3, 3, 31);
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 3px;
+    width: 95%;
+    margin-left: 10px;
+    position: relative;
+    list-style: none;
+    text-align: start;
+}
+
+.note-item .delete-btn {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.svg {
+    color: aqua;
+    width: 22px;
+    height: 22px;
+}
+
+/* Mobile responsive */
+@media (max-width: 534px) {
+    body {
+        background-color: rgb(71, 23, 23);
+    }
+
+    .notes .header>h1 {
+        font-size: 40px;
+        padding: 0px 5px;
+        color: yellow;
+
+    }
+
+    .notes .header a>img {
+        width: 55px;
+        height: 55px;
+        margin-right: 40px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+
+    #addNotes input {
+        width: 85%;
+        height: 35px;
+        margin-right: 40px;
+    }
+
+    .note-item {
+        background-color: rgb(5, 5, 78);
+        margin-top: 20px;
+        border-radius: 3px;
+        width: 85%;
+        font-family: sans-serif;
+    }
+}
